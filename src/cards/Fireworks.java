@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class Fireworks extends Card{
     
     public Fireworks() {

@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class PlusMinus extends Card{
     
     public PlusMinus() {

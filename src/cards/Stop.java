@@ -5,10 +5,6 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
 public class Stop extends Card{
     
     public Stop() {

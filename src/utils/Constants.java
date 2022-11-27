@@ -5,10 +5,7 @@
  */
 package utils;
 
-/**
- *
- * @author 34649
- */
+
 public class Constants {
     public static final int TOTALNUMDICES = 6;
     public static final int A_ASCII = 65;

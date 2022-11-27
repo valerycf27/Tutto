@@ -13,10 +13,7 @@ import java.util.Random;
 import dice.Dice;
 
 
-/**
- *
- * @author 34649
- */
+
 public class Utils {
     
     public static void printCurrentScore(ArrayList<Player> listPlayer){

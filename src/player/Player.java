@@ -19,10 +19,6 @@ import utils.Constants;
 import utils.Utils;
 
 
-/**
- *
- * @author 34649
- */
 public class Player {
     private int finalScore;
     private int turnScore;

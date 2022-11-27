@@ -6,10 +6,6 @@
 package cards;
 
 
-/**
- *
- * @author 34649
- */
 public class Card {
 
     private boolean used;

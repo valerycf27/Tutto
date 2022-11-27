@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class Cloverleaf extends Card{
     private int times;
 

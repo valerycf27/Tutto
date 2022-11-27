@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class Times2 extends Card{
     
     public Times2() {

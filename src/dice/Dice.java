@@ -7,10 +7,7 @@ package dice;
 
 import java.util.Random;
 
-/**
- *
- * @author 34649
- */
+
 public class Dice {
     private int number;
     

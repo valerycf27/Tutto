@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class Straight extends Card{
     
     public Straight() {

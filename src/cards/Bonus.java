@@ -5,10 +5,7 @@
  */
 package cards;
 
-/**
- *
- * @author 34649
- */
+
 public class Bonus extends Card{
     private int worth;
     public Bonus(int w) {

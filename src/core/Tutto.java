@@ -18,10 +18,6 @@ import java.util.Collections;
 import utils.Constants;
 
 
-/**
- *
- * @author 34649
- */
 public class Tutto {    
     
     public static void main(String[] args) {
