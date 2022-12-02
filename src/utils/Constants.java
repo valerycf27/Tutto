@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package utils;
 
+package utils;
 
 public class Constants {
     public static final int TOTALNUMDICES = 6;
@@ -20,15 +15,9 @@ public class Constants {
     public static final int NUMPLUSMINUSCARDS=5;
     public static final int NUMTIMES2CARDS=5;
     public static final int NUMBONUSCARDS=25;
-    
-    public static final int WORTH200=200;
-    public static final int WORTH300=300;
-    public static final int WORTH400=400;
-    public static final int WORTH500=500;
-    public static final int WORTH600=600;
 
-    public static final int SCORE1 = 50;
-    public static final int SCORE5 = 100;
+    public static final int SCORE1 = 100;
+    public static final int SCORE5 = 50;
     public static final int [] SCORETRIPLETS=new int[] {1000,200,300,400,500,600};
     
     public static final int SCOREPLUSMINUS=1000;
