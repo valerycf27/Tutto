@@ -31,10 +31,5 @@ public class DicesIn {
         	}
         }
     }    
-    
-    public void throwDices(){
-        for (Dice d : dicesArray){
-            d.throwDice();
-        }
-    }    
+     
 }
