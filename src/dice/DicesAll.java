@@ -14,6 +14,18 @@ public class DicesAll {
         this.dicesOut = new DicesOut();
     }
     
+    /* <Test>
+    Add constructor for testing purposes
+    * */
+    public DicesAll(int[] dices) {
+        this.dicesIn = new DicesIn(); //<Test>
+        this.dicesOut = new DicesOut();
+        dicesIn.getDicesArray().clear();
+        for (int i=0; i<dices.length; i++) {
+            dicesIn.getDicesArray().add(new Dice(dices[i]));
+        }
+    }
+    
     public DicesIn getDicesIn() {
 		return this.dicesIn;
 	}
