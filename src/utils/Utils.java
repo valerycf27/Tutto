@@ -159,10 +159,10 @@ public class Utils {
         	if (! listPlayer.get(position).equals(p)){
                 for (Player player: listPlayer){
                     if (!player.equals(p) && player.getFinalScore()==listPlayer.get(position).getFinalScore() && !player.equals(listPlayer.get(position))){
-                        player.setFinalScore(listPlayer.get(position).getFinalScore()-1000);
+                        player.setFinalScore(listPlayer.get(position).getFinalScore()-Constants.DEDUCTIONPLUSMINUS);
                     }
                 }
-                listPlayer.get(position).setFinalScore(listPlayer.get(position).getFinalScore()-1000);
+                listPlayer.get(position).setFinalScore(listPlayer.get(position).getFinalScore()-Constants.DEDUCTIONPLUSMINUS);
         	}
         	
         }
