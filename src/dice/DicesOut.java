@@ -12,10 +12,6 @@ public class DicesOut {
         return this.dicesArray;
     }
     
-    public void setDicesArray(ArrayList<Dice> dicesArray) {
-		this.dicesArray = dicesArray;
-	}
-    
     public void addDice(Dice dice){
         this.dicesArray.add(dice);
     }

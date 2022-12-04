@@ -1,23 +1,16 @@
 
 package core;
 
-import cards.Bonus;
 import cards.Card;
 import cards.Cloverleaf;
-import cards.Fireworks;
-import cards.PlusMinus;
 import cards.Stop;
-import cards.Straight;
-import cards.Times2;
 import java.util.ArrayList;
 import java.util.Scanner;
-import dice.Dice;
 import dice.DicesAll;
 
 import java.io.IOException;
 import player.Player;
 import utils.Utils;
-import java.util.Collections;
 import utils.Constants;
 
 

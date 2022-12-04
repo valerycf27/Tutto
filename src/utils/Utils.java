@@ -121,7 +121,7 @@ public class Utils {
         while(counter<listCard.size()-1 && listCard.get(counter).isUsed()==true){
             counter++;
         }
-        if (counter==55){
+        if (counter==56){
             for (int i=0;i<listCard.size();i++){
                 listCard.get(i).setUsed(false);
             }
