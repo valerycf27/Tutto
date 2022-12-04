@@ -112,14 +112,6 @@ public class Utils {
             System.out.println(listPlayer.get(i).getName()+": "+listPlayer.get(i).getFinalScore());
         }
     }
-    public static ArrayList<Dice> createNewListDice(int len){
-        ArrayList<Dice> lDice = new ArrayList<>();
-        for (int i=0;i<len;i++ ){
-            Dice d=new Dice();
-            lDice.add(d);
-        }
-        return lDice;
-    }
     
     public static Card getRandomCard(ArrayList<Card> listCard){
         Random rand=new Random();
@@ -154,23 +146,29 @@ public class Utils {
     }
 
     public static void restFirstPlayer(ArrayList<Player> listPlayer,Player p) {
-        int position=0;
+        int position=-1;
         int score=0;
         for (int i=0;i<listPlayer.size();i++){
-            if (! listPlayer.get(i).equals(p)){
-                if (listPlayer.get(i).getFinalScore()>score){
-                    position=i;
-                    score=listPlayer.get(i).getFinalScore();
-                }
+            if (listPlayer.get(i).getFinalScore()>score){
+                position=i;
+                score=listPlayer.get(i).getFinalScore();
             }
 
         }
-        for (Player player: listPlayer){
-            if (!player.equals(p) && player.getFinalScore()==listPlayer.get(position).getFinalScore() && !player.equals(listPlayer.get(position))){
-                player.setFinalScore(listPlayer.get(position).getFinalScore()-1000);
-            }
+        if (position != -1) {
+        	if (! listPlayer.get(position).equals(p)){
+                for (Player player: listPlayer){
+                    if (!player.equals(p) && player.getFinalScore()==listPlayer.get(position).getFinalScore() && !player.equals(listPlayer.get(position))){
+                        player.setFinalScore(listPlayer.get(position).getFinalScore()-1000);
+                    }
+                }
+                listPlayer.get(position).setFinalScore(listPlayer.get(position).getFinalScore()-1000);
+        	}
+        	
         }
-        listPlayer.get(position).setFinalScore(listPlayer.get(position).getFinalScore()-1000);
+
+
+        
         
     }
 }

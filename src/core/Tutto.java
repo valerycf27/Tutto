@@ -12,6 +12,8 @@ import cards.Times2;
 import java.util.ArrayList;
 import java.util.Scanner;
 import dice.Dice;
+import dice.DicesAll;
+
 import java.io.IOException;
 import player.Player;
 import utils.Utils;
@@ -35,7 +37,7 @@ public class Tutto {
 
         
         //SET OF DICES
-        ArrayList<Dice> dices = new ArrayList<Dice>();
+        DicesAll dices=new DicesAll();
         
         //PLAY TUTTO GAME
         boolean victoryPlayer=false;
@@ -60,13 +62,7 @@ public class Tutto {
                         }
                         else if (letter.equals("R")){
                             Card c=Utils.getRandomCard(deckCards);
-                            dices=Utils.createNewListDice(Constants.TOTALNUMDICES);
-                            while (listPlayer.get(i).playTurn(c, dices)){
-                                if (c instanceof PlusMinus){ //WRONG
-                                    Utils.restFirstPlayer(listPlayer,listPlayer.get(i));
-                                    
-                                }   
-                                dices=Utils.createNewListDice(Constants.TOTALNUMDICES);
+                            while (listPlayer.get(i).playTurn(c, dices)){  
                                 c=Utils.getRandomCard(deckCards);
                             }
                             if (c instanceof Stop){
@@ -76,6 +72,10 @@ public class Tutto {
                                 if (((Cloverleaf)c).getTimes()==2){
                                     victoryPlayer=true;
                                 }
+                            }
+                            else if(listPlayer.get(i).isPlusMinus()) {
+                            	Utils.restFirstPlayer(listPlayer, listPlayer.get(i));
+                            	listPlayer.get(i).setPlusMinus(false);
                             }
                             errorStart=false;
                         }
@@ -94,11 +94,7 @@ public class Tutto {
                     System.out.println("GAME OVER");
                     break;
                 }
-                
-
             }
         }
-        
     }
-    
 }
